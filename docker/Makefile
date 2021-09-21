@@ -19,7 +19,7 @@ makefile_dir := $(dir $(makefile_path))
 LATEST_VERSION ?= latest
 
 prep:
-	@git fetch --unshallow ||:
+	@git fetch --depth=100000||:
 	@git fetch origin 'refs/tags/*:refs/tags/*'
 
 lint:
