@@ -4,6 +4,7 @@ gem 'pupperware',
   :git => 'https://github.com/puppetlabs/pupperware.git',
   :ref => 'main',
   :glob => 'gem/*.gemspec'
+gem 'thwait'
 
 group :test do
   gem 'rspec'
